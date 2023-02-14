@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML...</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <form>
+
+        <div>
+            <p>Metodo di contatto preferito</p>
+            <input type="radio" id="radio_email" name="metodo_contatto" value="email">
+            <label for="radio_email">Email</label><br>
+
+            <input type="radio" id="radio_telefono" name="metodo_contatto" value="telefono">
+            <label for="radio_telefono">Telefono</label><br>
+        </div>
+
+        <div>
+            <label for="nome">Inserisci il tuo nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required />
+        </div>
+
+        <div>
+            <label for="telefono">Inserisci il tuo telefono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Cellulare" />
+        </div>
+
+        <div>
+            <label for="email">Inserisci la tua email</label>
+            <input type="email" name="email" id="email" placeholder="Inserisci la tua email" />
+        </div>
+
+        <div>
+            <label for="motivo_contatto">Motivo del contatto</label>
+
+            <select name="cars" id="motivo_contatto">
+                <option value="tecnica">Richiesta tecnica</option>
+                <option value="commerciale">Assistenza commerciale</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="messaggio">Inserisci la tua richiesta</label>
+            <textarea id="messaggio" name="messaggio" rows="4" cols="50" ></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="gdpr" name="gdpr" value="true" required>
+            <label for="gdpr"> Accetto i termini e condizioni d'uso del sito...</label><br>
+        </div>
+
+        <div>
+            <input type="submit" value="Invia richiesta" />
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
